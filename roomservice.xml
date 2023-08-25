@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Contain patches needed since the kernel has no eBPF support - REQUIRED -->
   <remove-project name="platform/system/bpf" />
   <project name="miikaoskari/android_system_bpf" path="system/bpf" remote="github" revision="android-13" />
-  <remove-project name="platform/system/netd" />
+  <remove-project name="LineageOS/android_system_netd" />
   <project name="miikaoskari/android_system_netd" path="system/netd" remote="github" revision="lineage-20.0" />  
   <!-- END OF FORKS -->
 
